@@ -1,0 +1,24 @@
+{
+  "name": "alkemy",
+  "version": "1.0.0",
+  "description": "Test para entrar a Alkemy 01-2021",
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "repository": {
+    "type": "git",
+    "url": "alkemy-test"
+  },
+  "keywords": [
+    "alkemy",
+    "test"
+  ],
+  "author": "Ariel Silva",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql": "^2.18.1",
+    "prettier": "^2.2.1",
+    "util": "^0.12.3"
+  }
+}
