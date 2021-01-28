@@ -6,10 +6,9 @@ const list = async (req, res) => {
   try {
     //    const {userId} = req.userId
     const transactions = await service.list(1);
-    res.json(transactions);
+    return res.json({ results: transactions });
   } catch (e) {
-    res.json({ error: true, message: "Ocurrió un error" });
-    throw e;
+    return res.json({ error: true, message: "Ocurrió un error" });
   }
 };
 
