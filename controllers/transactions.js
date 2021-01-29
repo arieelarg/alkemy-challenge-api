@@ -4,7 +4,7 @@ const service = require("../models/transactions");
 
 const list = async (req, res) => {
   try {
-    //    const {userId} = req.userId
+    // const { userId } = req.userId;
     const transactions = await service.list(1);
     return res.json({ results: transactions });
   } catch (e) {
