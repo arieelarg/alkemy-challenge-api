@@ -14,7 +14,9 @@ const list = async (req, res) => {
 
 const create = async (req, res) => {
   try {
-    // TO-DO
+    // const { userId } = req.userId;
+    const result = await service.create({ idUser: 1, ...req.body });
+    return res.json({ results: result });
   } catch (e) {
     console.log(e);
     res.json({ error: true, message: "Ocurrió un error" });
